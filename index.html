@@ -1,21 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
-</head>
-<body>
-    <header>
-        <h1>WDD 131 - Zefa Binena Makenda</h1>
-    </header>
-    <main>
-        <p>This is a sample web page to demonstrate HTML structure.</p>
-    </main>
-    <footer>
-        <p>&copy; 2024 My Web Page</p>
-    </footer>
-</body>
+
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WDD 131 – Dynamic Web Fundamentals – Zefa Binena Makenda</title>
+        <link rel="stylesheet" href="styles/base.css">
+        <script src="scripts/getdates.js" defer></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+
+    </head>
+
+
+    <body>
+
+        <header>
+            <h1>WDD 131 – Dynamic Web Fundamentals</h1>
+            <nav>
+                <ul>
+                    <li><a href="https://www.linkedin.com/zefa-makenda-939521202">profile</a></li>
+                    <li><a href="https://byupw.instructure.com/">Canvas</a></li>
+                    <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7">Scripture</a></li>
+                    <li><a href="#">Final Project</a></li>
+                </ul>                        
+            </nav>
+        </header>
+
+        <main>
+            <h1>Zefa Binena Makenda</h1>
+            <section class="card">
+                <img src="images/profilepicture.jpg" alt="Zefa B Makenda profile picture" width="200">
+            </section>
+            <section class="card">
+                <img src="images/drc_flag.jpeg" alt="Republic Democratic of Congo Flag" width="200">
+            </section>        
+        </main>
+
+        <footer>
+            <p>© <span id="currentyear"></span> 🌲 Zefa Binena Makenda 🌲 SOUTH AFRICA</p>
+            <p id="lastModified"></p>
+        </footer>
+
+    </body>
+
 </html>
