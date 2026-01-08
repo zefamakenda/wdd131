@@ -8,6 +8,11 @@
 }
 
 
+header,main, footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -30,16 +35,22 @@ header{
 
 h1 {
     font-family: "Roboto", sans-serif;
-    font-weight: 100;
-    background-color: var(--accent2-color);
+    font-weight: 200;
     padding: 1rem;
-    border: 1px solid rgb(0 0 0 / 10%);
     font-size: 2rem;
     text-align: center;
 }
 
+
+span{
+    display: grid;
+    grid-template-columns: auto;
+    justify-items: center;
+    background-color: var(--accent2-color);
+}
+
 nav {
-    background-color: #36454f;
+    background-color: blue;
     margin: 0 auto;
     max-width: 800px;
 }
@@ -86,4 +97,8 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
+}
+
+#currentyear {
+    display: inline;
 }
