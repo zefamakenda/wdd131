@@ -1,7 +1,7 @@
 :root {
     /* --primary-color: #032103;
-    --secondary-color: #3d1d02;
-    --accent1-color: #264653; */
+    --secondary-color: #3d1d02; */
+    --accent1-color: #264653;
     --accent2-color: #e9c46a;
     /* --heading-font: "Times New Roman", Georgia, serif;
     --body-font: Arial, Helvetica, sans-serif; */
@@ -50,7 +50,7 @@ span{
 }
 
 nav {
-    background-color: steelblue;
+    background-color: var(--accent1-color);
     margin: 0 auto;
     max-width: 800px;
 }
