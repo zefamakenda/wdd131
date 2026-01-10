@@ -91,7 +91,7 @@ nav a:hover {
     list-style-position: inside;
     padding-left: 0;
     text-align: left;
-    margin-top: 140px;
+    margin-top: 130px;
 }
 
 li {
@@ -122,6 +122,10 @@ main {
 
 }
 
+
+.center-text {
+    text-align: center;
+}
 
 .card img {
     max-width: 100%;
@@ -209,14 +213,14 @@ footer {
 }
 
 #currentyear {
-    background-color: none;
+    background-color: transparent;
     display: inline;
     color: white;
     padding: 0;
 }
 
 #lastModified {
-    background-color: none;
+    background-color: transparent;
     display: inline;
     color: rgb(153, 172, 42);
     padding: 0;
