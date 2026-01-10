@@ -1,14 +1,11 @@
 :root {
-    /* --primary-color: #032103;
-    --secondary-color: #3d1d02; */
     --accent1-color: #264653;
     --accent2-color: #e9c46a;
-    /* --heading-font: "Times New Roman", Georgia, serif;
-    --body-font: Arial, Helvetica, sans-serif; */
 }
 
-
-header,main, footer {
+header,
+main,
+footer {
     max-width: 840px;
     margin: 0 auto;
 }
@@ -25,34 +22,38 @@ body {
     justify-items: center;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
+    gap: 20px;
 }
 
-header{
-    display: block;
+header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
 }
 
-
+span, .course-title {
+    background-color: var(--accent1-color);
+    color: white;
+    text-align: center;
+    padding: 1.4rem;
+}
 
 h1 {
     font-family: "Roboto", sans-serif;
-    font-weight: 200;
-    padding: 1rem;
+    font-weight: 450;
+    padding: 10px;
     font-size: 2rem;
     text-align: center;
+    font-style: italic;
 }
 
-
-span{
-    display: grid;
-    grid-template-columns: auto;
-    justify-items: center;
-    background-color: var(--accent2-color);
-}
 
 nav {
-    background-color: var(--accent1-color);
-    margin: 0 auto;
-    max-width: 800px;
+    background-color: rgb(30, 22, 43);
+    margin: 0;
+    /* max-width: 800px; */
+    padding: 0rem;
 }
 
 nav ul {
@@ -63,13 +64,13 @@ nav a {
     display: block;
     color: white;
     text-align: center;
-    padding: 1rem;
+    padding: 0.5rem;
     text-decoration: none;
 }
 
-
 nav a:hover {
     text-decoration: overline;
+    color: aquamarine;
 }
 
 .active {
@@ -82,12 +83,11 @@ nav a:hover {
     }
 
     nav ul li {
-        flex: 1 0 auto;      
+        flex: 1 0 auto;
     }
 }
 
 main {
-    max-width: 800px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
@@ -96,11 +96,70 @@ main {
 
 .card {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr auto;
     justify-items: center;
+    padding: 1rem;
+   
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    justify-items: center;
+    padding: 1rem;
+
+}
+
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.my-info {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    max-width: 800px;
+    gap: 1rem;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 5px white;
+    border: 1px solid #ddd;
+    
+}
+
+
+
+
+
+h2 {
+    background-color:rgb(22, 22, 67) ;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 5px var(--accent1-color);
+    border: 1px solid #ddd;
+    text-align: center;
+    font-weight: 400;
+    font-size: medium;
+    padding: 15px;
+}
+
+
+footer {
+    background-color: var(--accent1-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
 }
 
 #currentyear {
     display: inline;
     background-color: white;
+    color: var(--accent1-color);
 }
