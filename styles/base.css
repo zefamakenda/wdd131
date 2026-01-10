@@ -95,25 +95,26 @@ main {
 }
 
 .card {
-    display: grid;
-    grid-template-columns: 1fr auto;
+    display: flex;
+    flex-direction: row;
     justify-items: center;
-    padding: 1rem;
+    gap: 10px;
+    
    
 }
 
 .cards {
     display: grid;
-    grid-template-columns: auto 1fr;
-    justify-items: center;
+    grid-template-columns: 1fr auto;
     padding: 1rem;
+    align-items: start;
 
 }
 
 
 .card img {
     max-width: 100%;
-    height: auto;
+    max-height: 100%;
 }
 
 .my-info {
@@ -133,7 +134,45 @@ main {
     
 }
 
+.profile {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
+ .me {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    font-size: 15px;
+    text-align: left;
+    color: #53264e;
+}
+
+.drc {
+    font-weight: 400;
+    font-size: 20px;
+    color: rgb(26, 2, 2);
+    align-items: center;
+}
+
+ .my-country {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    font-size: 15px;
+    text-align: left;
+    color: #53264e;
+}
+.carrier {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        border-radius: 5px;
+        box-shadow: 0 0 5px white;
+        border: 1px solid #ddd;
+
+    }
 
 
 
@@ -159,7 +198,15 @@ footer {
 }
 
 #currentyear {
+    background-color: none;
     display: inline;
-    background-color: white;
-    color: var(--accent1-color);
+    color: white;
+    padding: 0;
+}
+
+#lastModified {
+    background-color: none;
+    display: inline;
+    color: rgb(153, 172, 42);
+    padding: 0;
 }
