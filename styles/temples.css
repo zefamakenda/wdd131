@@ -75,7 +75,6 @@ figure img {
 .images :hover {
         box-shadow: 0 0 50px #333;
         border: solid blue;
-        /* border: 1px solid #c4d82c; */
         color: #6a792e;
         
     }
