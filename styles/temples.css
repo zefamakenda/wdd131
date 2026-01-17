@@ -23,11 +23,13 @@ nav ul {
 }
 
 nav a {
-    display: block;
+    display: flex;
     color: #fff;
+    flex-direction: column;
     text-align: center;
     padding: 1rem;
     text-decoration: none;
+    align-items: flex-end;
 }
 
 nav a:hover {
@@ -73,7 +75,7 @@ figure img {
 .images :hover {
         box-shadow: 0 0 50px #333;
         border: solid blue;
-        border: 1px solid #c4d82c;
+        /* border: 1px solid #c4d82c; */
         color: #6a792e;
         
     }
@@ -86,7 +88,6 @@ figcaption {
 
 footer {
     background: #16092c;
-    /* color: white */
     text-align: center;
     color: #c4d82c;
 }
@@ -105,8 +106,4 @@ footer {
     padding: 0;
 }
 
-.images :hover {
-    box-shadow: #16092c;
-    
-}
 
