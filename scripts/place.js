@@ -6,8 +6,8 @@ yearSpan.textContent = new Date().getFullYear();
 lastModifiedPara.textContent = `Last modified: ${document.lastModified}`;
 
 
-const temperature = 24; // °C
-const windSpeed = 5; // km/h
+const temperature = 9; // °C
+const windSpeed = 6; // km/h
 
 document.getElementById('temp').textContent = temperature;
 document.getElementById('wind').textContent = windSpeed;
