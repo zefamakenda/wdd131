@@ -1,0 +1,43 @@
+    @media (min-width: 640px) {
+    
+        .weather-section {
+            position: absolute;
+            align-items: top;
+            background-color: aquamarine;
+            opacity: 70%;
+            text-align: center;
+            display: grid;
+            grid-template-columns: 1fr;
+            right: 10px;
+            bottom: 10px;
+        }
+
+        .main {
+            position: relative;
+        }
+
+
+        .weather-h {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            background-color: blue;
+        }
+
+       .data {
+            margin-top: 20px;
+            margin-left: 10px;
+           position: absolute;
+           background-color: aquamarine;
+           opacity: 70%;
+           text-align: center;
+       }
+
+       h2 {
+        background-color: rgb(35, 9, 74);
+        padding: 30px;
+        color: aliceblue;
+       }
+
+
+    }
+

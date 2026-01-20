@@ -1,0 +1,135 @@
+
+
+:root {
+    --primary-color: #342fd3;
+    --background-light: #f4f4f4;
+    --white: #ffffff;
+    --text-dark: #333333;
+    --overlay-dark: rgba(0, 0, 0, 0.4);
+    --year-color: rgb(133, 126, 126);
+    --modified-color: #8c954b;
+    --utility-red: red;
+    --utility-yellow: yellow;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-light);
+}
+
+/* Layout container */
+.container {
+    width: 100%;
+    max-width: 840px;
+    margin: auto;
+    background: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+header {
+    background: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 10px 0;
+    font-size: 24px;
+}
+
+.main {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Hero */
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-content {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    color: var(--white);
+    background: var(--overlay-dark);
+}
+
+/* Sections */
+.data-section,
+.weather-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px 0;
+}
+
+h2 {
+    color: var(--text-dark);
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+/* Weather info */
+.weather-info {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.weather-h img {
+    width: 140px;
+    height: auto;
+}
+
+/* Utility styles */
+.color {
+    background-color: var(--utility-red);
+    padding: 5px;
+}
+
+.star {
+    background-color: var(--utility-yellow);
+    padding: 1px;
+}
+
+/* Footer */
+footer {
+    background: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+#currentyear,
+#lastModified {
+    background-color: transparent;
+    display: inline;
+    padding: 0;
+}
+
+#currentyear {
+    color: var(--year-color);
+}
+
+#lastModified {
+    color: var(--modified-color);
+}

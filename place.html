@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Zefa Binena Makenda's BYU-Idaho WDD 131 course Country page">
+        <meta name="author" content="Zefa Binena Makenda">
+        <title>Country Page</title>
+        <link rel="stylesheet" href="styles/place.css">
+        <link rel="stylesheet" href="styles/place_large.css" media="(min-width: 768px)">
+        <script src="scripts/place.js" defer></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="container">
+            <header class="header">
+                <h1>Democratic Republic of Congo</h1>
+            </header>
+            <main>
+                <div class="main">
+                    <div class="star"></div>
+                    <div class="color"></div>
+                    <div class="star"></div>
+
+                    <section class="hero">
+                        <picture>
+
+                            <source srcset="images/okapi.jpg" media="(min-width: 640px)">
+
+
+                            <source srcset="images/okapi.jpg" media="(min-width: 600px)">
+
+
+                            <img src="images/okapi_s.jpg" alt="Modern workspace with laptop and coffee, representing productivity"
+                                width="1600" height="900" loading="eager">
+                        </picture>
+
+
+                    </section>
+
+                    <section class="data">
+                        <h2>Data</h2>
+
+                        <ul>
+                            <li><strong>Area:</strong> 2,345,000 sq km</li>
+                            <li><strong>Population:</strong> 112,000,018</li>
+                            <li><strong>Capital:</strong> Kinshasa</li>
+                            <li><strong>Languages:</strong> Lingala, French</li>
+                            <li><strong>Currency:</strong> Congo Frank</li>
+                            <li><strong>Time Zone:</strong> UTC+1</li>
+                            <li><strong>Calling Code:</strong> +243</li>
+                            <li><strong>Internet TLD:</strong> .cd</li>
+                        </ul>
+                    </section>
+                    <section class="weather-section">
+                        <div class="weather-h">
+                            <h2>Weather</h2>
+                            <img src="images/weather.svg" alt="Weather icon">
+                        </div>
+                        <div class="weather-info">                            
+                            <p><strong>Temperature:</strong> 27°C</p>
+                            <p><strong>Conditions:</strong> Partly Cloudy</p>
+                            <p><strong>Wind:</strong> 5 km/h</p>
+                            <p><strong>Wind Chill:</strong> 24°C</p>
+                        </div>
+                    </section>
+
+                </div>
+            </main>
+            <footer class="footer">
+                <p>© <span id="currentyear"></span> 🌲 Zefa Binena Makenda 🌲 SOUTH AFRICA</p>
+                <p id="lastModified"></p>
+            </footer>
+        </div>
+        <script src="script.js"></script>
+    </body>
+
+</html>
