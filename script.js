@@ -7,16 +7,6 @@ yearSpan.textContent = currentYear;
 
 lastModifiedPara.textContent = `Last modified: ${document.lastModified}`;
 
-
-// const menuToggle = document.querySelector('.menu-toggle');
-// const navList = document.querySelector('.nav-list');
-
-// menuToggle.addEventListener('click', () => {
-//     navList.classList.toggle('active');
-// });
-
-
-
 const temperature = 9; // °C
 const windSpeed = 6; // km/h
 
