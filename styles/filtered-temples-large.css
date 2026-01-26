@@ -23,4 +23,8 @@
                 overflow: hidden;
                 text-overflow: ellipsis;     
             }
+            .highlight {
+                color: rgb(128, 13, 32);
+                font-weight: bold;
+            }
         }

@@ -67,6 +67,11 @@ p {
    font-size: small; 
 }
 
+.highlight {
+    color: rgb(62, 26, 32);
+    font-weight: bold;
+}
+
 section {
     display: flex;
     background-color: rgb(131, 212, 185);
