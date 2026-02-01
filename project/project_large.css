@@ -1,0 +1,24 @@
+@media (min-width: 768px) {
+    body {
+        margin: 3rem auto;
+        max-width: 1100px;
+        /* wider layout */
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .logo {
+        width: 150px;
+        /* larger logo */
+    }
+
+    ul {
+        margin-left: 2.5rem;
+    }
+}
