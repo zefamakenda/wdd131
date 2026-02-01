@@ -8,12 +8,23 @@ yearSpan.textContent = currentYear;
 lastModifiedPara.textContent = `Last modified: ${document.lastModified}`;
 
 
+
 const menuToggle = document.querySelector('.menu-toggle');
 const navList = document.querySelector('.nav-list');
 
-menuToggle.addEventListener('click', () => {
-    navList.classList.toggle('active');
-});
+if (menuToggle && navList) {
+    menuToggle.addEventListener('click', () => {
+        navList.classList.toggle('active');
+    });
+}
+
+
+// const menuToggle = document.querySelector('.menu-toggle');
+// const navList = document.querySelector('.nav-list');
+
+// menuToggle.addEventListener('click', () => {
+//     navList.classList.toggle('active');
+// });
 
 const temples = [
     {
@@ -145,5 +156,77 @@ function createTempleCard() {
         document.body.querySelector(".res-grid").appendChild(card);
     });
 }
+
+
+
+
+const templeContainer = document.querySelector(".res-grid");
+
+// DISPLAY FUNCTION (reusable)
+function displayTemples(templeList) {
+    templeContainer.innerHTML = ""; // clear previous cards
+
+    templeList.forEach(temple => {
+        const card = document.createElement("section");
+        const name = document.createElement("h3");
+        const location = document.createElement("p");
+        const dedication = document.createElement("p");
+        const area = document.createElement("p");
+        const img = document.createElement("img");
+
+        name.textContent = temple.templeName;
+        location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
+        dedication.innerHTML = `<span class="label">Dedicated:</span> ${temple.dedicated}`;
+        area.innerHTML = `<span class="label">Size:</span> ${temple.area.toLocaleString()} sq ft`;
+
+        img.src = temple.imageUrl;
+        img.alt = `${temple.templeName} Temple`;
+        img.loading = "lazy";
+
+        card.append(name, location, dedication, area, img);
+        templeContainer.appendChild(card);
+    });
+}
+
+// INITIAL LOAD (Home)
+displayTemples(temples);
+
+// FILTERS
+const oldTemples = temples.filter(t =>
+    new Date(t.dedicated).getFullYear() < 1999
+);
+
+const newTemples = temples.filter(t =>
+    new Date(t.dedicated).getFullYear() > 2000
+);
+
+const largeTemples = temples.filter(t =>
+    t.area > 90000
+);
+
+const smallTemples = temples.filter(t =>
+    t.area < 90000
+);
+
+// BUTTON EVENTS
+document.querySelector("#home").addEventListener("click", () => {
+    displayTemples(temples);
+});
+
+document.querySelector("#old").addEventListener("click", () => {
+    displayTemples(oldTemples);
+});
+
+document.querySelector("#new").addEventListener("click", () => {
+    displayTemples(newTemples);
+});
+
+document.querySelector("#large").addEventListener("click", () => {
+    displayTemples(largeTemples);
+});
+
+document.querySelector("#small").addEventListener("click", () => {
+    displayTemples(smallTemples);
+});
 
 
