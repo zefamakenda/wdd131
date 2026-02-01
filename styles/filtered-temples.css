@@ -29,18 +29,20 @@ header {
 
 }
 
-.nav-list button {
+.nav-link {
     width: 90px;
-    height: 30px;
+    height: 27px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: transparent;
-    border: 1px solid #ccc;
-    cursor: pointer;
-    font-size: 1rem;
-    color: aliceblue;
+    text-decoration: none;
+    background-color: #e4efef;
+    color: #333;
+    border: 2px solid black;
+    border-radius: 2px;
+    font-weight: 300;
 }
+
 
 nav .active {
     background-color: #efac3e;
