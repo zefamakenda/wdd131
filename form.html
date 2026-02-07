@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Zefa Binena Makenda's BYU-Idaho WDD 131 course Product Review Form ">
+        <meta name="author" content="Zefa Binena Makenda">
+        <title>Product Review Form</title>
+        <link rel="stylesheet" href="styles/form.css">
+        <link rel="stylesheet" href="styles/form_large.css" media="(min-width: 768px)">
+        <script src="scripts/form.js" defer></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+    </head>
+
+
+    <body>
+        <header>
+            <h1>Product Review</h1>
+        </header>
+        <main class="container">
+            <!-- <h1>Product Review</h1> -->
+
+            <!-- FORM -->
+            <form method="get" action="">
+
+                <!-- Product Name -->
+                <label for="product">
+                    Product Name <span class="required">*</span>
+                </label>
+                <select id="product" name="product" required>
+                    <option value="" disabled selected>Select a Product ...</option>
+                </select>
+
+                <!-- Overall Rating -->
+                <fieldset>
+                    <legend>
+                        Overall Rating <span class="required">*</span>
+                    </legend>
+                    <div class="rating">
+                        <label class="rate">☆<input type="radio" name="rating" value="1" required></label>
+                        <label class="rate">☆☆<input type="radio" name="rating" value="2"></label>
+                        <label class="rate">☆☆☆<input type="radio" name="rating" value="3"></label>
+                        <label class="rate">☆☆☆☆<input type="radio" name="rating" value="4"></label>
+                        <label class="rate">☆☆☆☆☆<input type="radio" name="rating" value="5"></label>
+                    </div>
+                </fieldset>
+
+                <!-- Date -->
+                <label for="date">
+                    Date of Installation <span class="required">*</span>
+                </label>
+                <input type="date" id="date" name="date" required>
+
+                <!-- Features -->
+                <fieldset>
+                    <legend>Useful Features (check all that apply)</legend>
+                    <label class="checkbox"><input type="checkbox" name="features" value="Durability">Durability</label>
+                    <label class="checkbox"><input type="checkbox" name="features" value="Ease of Use"> Ease of Use</label>
+                    <label class="checkbox"><input type="checkbox" name="features" value="Performance"> Performance</label>
+                    <label class="checkbox"><input type="checkbox" name="features" value="Design"> Design</label>
+                </fieldset>
+
+                <!-- Review -->
+                <label for="review">Written Review (Optional)</label>
+                <textarea id="review" name="review"></textarea>
+
+                <!-- Name -->
+                <label for="username">Your Name (Optional)</label>
+                <input type="text" id="username" name="username">
+
+                <!-- Submit -->
+                <input type="submit" value="Post Review">
+            </form>
+
+            <!-- CONFIRMATION -->
+            <section id="confirmation" hidden>
+                <h2>Thank You!</h2>
+                <p>Your review has been submitted.</p>
+                <p id="counter"></p>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>© <span id="currentyear"></span> 🌲 Zefa Binena Makenda 🌲 SOUTH AFRICA</p>
+            <p id="lastModified"></p>
+        </footer>
+    </body>
+
+</html>

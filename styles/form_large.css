@@ -1,0 +1,74 @@
+    @media (min-width: 640px) {
+
+    .rating {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+    .rating label {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.25rem;
+        font-size: 1.3rem;
+        cursor: pointer;
+        padding: 1rem;
+        }
+
+        label,
+        legend {
+        font-weight: bold;
+        display: block;
+        
+        }
+        
+        /* .checkbox-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        background-color: blue;
+                   
+        } */
+
+        fieldset .checkbox {
+            display: grid;
+            grid-template-columns: 10px 1fr;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 0.4rem;
+            cursor: pointer;
+            background-color: rgb(165, 226, 205);
+        
+        }
+        
+
+        /* .main {
+            position: relative;
+        }
+
+
+        .weather-h {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            background-color: blue;
+        }
+
+        .data {
+            margin-top: 20px;
+            margin-left: 10px;
+            position: absolute;
+            background-color: aquamarine;
+            opacity: 70%;
+            text-align: center;
+        }
+
+        h2 {
+            background-color: rgb(35, 9, 74);
+            padding: 30px;
+            color: aliceblue;
+        } */
+
+
+    }
