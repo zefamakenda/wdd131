@@ -54,11 +54,11 @@ legend {
 }
 
 .checkbox {
-    align-items: end;
+    align-items: start;
     display: flex;
     flex-direction: column;
     margin-left: auto;
-    background-color: #16092c;
+    
 }
 
 input,
