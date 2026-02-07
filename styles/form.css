@@ -39,7 +39,8 @@ h2 {
     color: #e4e1e8;
 }
 
-label,
+
+
 legend {
     font-weight: bold;
     display: inline-flex;
@@ -57,14 +58,14 @@ legend {
     display: flex;
     flex-direction: column;
     margin-left: auto;
+    background-color: #16092c;
 }
 
 input,
 select,
 textarea {
     width: 100%;
-    /* padding: 0.5rem; */
-    /* margin-top: 0.25rem; */
+ 
 }
 
 textarea {
@@ -86,16 +87,24 @@ fieldset .checkbox {
 }
 
 .rating {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: start;
+    /* justify-content: center; */
     gap: 1rem;
+    
 }
 
 .rate {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
+    height: auto;
+    width: auto;
+    
 }
+
+
 
 .required {
     color: red;
