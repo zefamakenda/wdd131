@@ -1,0 +1,57 @@
+    @media (min-width: 640px) {
+
+    .rating {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+         .rate {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         height: auto;
+         width: auto;
+                    
+        }
+
+    .rating label {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 5.5vh;
+        /* gap: 1fr; */
+        font-size: 1.3rem;
+        cursor: pointer;
+        /* padding: 1rem; */
+        }
+
+        label,
+        legend {
+        font-weight: bold;
+        display: block;
+        
+        }
+
+        .rate {
+            flex-grow: 1;
+        }
+        
+
+
+        fieldset .checkbox {
+            display: grid;
+            grid-template-columns: 10px 1fr;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 0.4rem;
+            cursor: pointer;
+            background-color: rgb(165, 226, 205);
+        
+        }
+        
+
+
+
+    }

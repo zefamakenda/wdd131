@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f1f8;
+    margin: 0;
+    justify-content: center;
+}
+
+header,
+main,
+footer {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding: 0 20px;
+}
+
+header {
+    background: #200e3f;
+}
+
+.container {
+    max-width: 600px;
+    margin: 1.5rem auto;
+    padding: 1.5rem;
+    background: rgb(116, 181, 134);
+    border-radius: 5px;
+}
+
+h1,
+h2 {
+    text-align: center;
+    color: #e4e1e8;
+}
+
+
+
+legend {
+    font-weight: bold;
+    display: inline-flex;
+}
+
+.checkbox-container-grid {
+    display: grid;
+    grid-template-columns: min-content auto;
+    align-items: center;
+    gap: 8px;
+}
+
+.checkbox {
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+ 
+}
+
+textarea {
+    min-height: 80px;
+}
+
+fieldset {
+    border: none;
+    margin-top: 1rem;
+}
+
+fieldset .checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.4rem;
+    cursor: pointer;
+    background-color: #e6e2ec;
+}
+
+.rating {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: start;
+    /* justify-content: center; */
+    gap: 1rem;
+    
+}
+
+.rate {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    height: auto;
+    width: auto;
+    
+}
+
+
+
+.required {
+    color: red;
+}
+
+input[type="submit"] {
+    background-color: #5b3a82;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+footer {
+    background: #16092c;
+    text-align: center;
+    color: #c4d82c;
+}
+
+#currentyear,
+#lastModified {
+    display: inline;
+    padding: 0;
+}
+
+#currentyear {
+    color: rgb(133, 126, 126);
+}
+
+#lastModified {
+    color: #8c954b;
+}

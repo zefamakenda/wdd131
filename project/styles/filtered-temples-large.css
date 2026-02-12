@@ -1,0 +1,41 @@
+    
+    @media (min-width: 640px) {
+        .nav-list {
+            display: flex;
+            flex-direction: row;
+        }
+
+        nav ul li {
+            flex: 1 1 100%;
+        }
+    }
+
+
+
+        @media (min-width: 640px) {
+            .res-grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 1rem;
+                /* optional spacing */
+            }
+            .paragraph{
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;    
+            }
+                        
+            
+             h2 {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                font-size: larger;
+             }
+
+
+            .highlight {
+                color: rgb(128, 13, 32);
+                font-weight: bold;
+            }
+        }
